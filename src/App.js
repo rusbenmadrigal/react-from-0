@@ -18,8 +18,8 @@ function App() {
             Simple react <code>src/App.js</code> and save to reload.
           </p>
           <ul>
-            {seasons.map((season) => (
-              <li>{season}</li>
+            {seasons.map((season, index) => (
+              <li key={index}>{season}</li>
             ))}
           </ul>
           <p>{2 + 1}</p>
